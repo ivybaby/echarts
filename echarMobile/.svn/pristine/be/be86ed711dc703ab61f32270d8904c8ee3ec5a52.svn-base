@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Cloud Admin | Elements</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- STYLESHEETS --><!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/cloud-admin.css" >
+	<link rel="stylesheet" type="text/css"  href="css/themes/default.css" id="skin-switcher" >
+	<link rel="stylesheet" type="text/css"  href="css/responsive.css" >
+	
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- JQUERY UI-->
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.10.3.custom/css/custom-theme/jquery-ui-1.10.3.custom.min.css" />
+	<!-- DATE RANGE PICKER -->
+	<link rel="stylesheet" type="text/css" href="js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+	<!-- BOOTSTRAP SWITCH -->
+	<link rel="stylesheet" type="text/css" href="js/bootstrap-switch/bootstrap-switch.min.css" />
+	<!-- HUBSPOT MESSENGER -->
+	<link rel="stylesheet" type="text/css" href="js/hubspot-messenger/css/messenger.min.css" />
+	<link rel="stylesheet" type="text/css" href="js/hubspot-messenger/css/messenger-spinner.min.css" />
+	<link rel="stylesheet" type="text/css" href="js/hubspot-messenger/css/messenger-theme-air.min.css" />
+	<link rel="stylesheet" type="text/css" href="js/hubspot-messenger/css/messenger-theme-block.min.css" />
+	<link rel="stylesheet" type="text/css" href="js/hubspot-messenger/css/messenger-theme-flat.min.css" />
+	<link rel="stylesheet" type="text/css" href="js/hubspot-messenger/css/messenger-theme-future.min.css" />
+	<link rel="stylesheet" type="text/css" href="js/hubspot-messenger/css/messenger-theme-ice.min.css" />
+	<!-- MAGIC SUGGEST -->
+	<link rel="stylesheet" type="text/css" href="js/magic-suggest/magicsuggest-1.3.1-min.css" />
+	<!-- DATE PICKER -->
+	<link rel="stylesheet" type="text/css" href="js/datepicker/themes/default.min.css" />
+	<link rel="stylesheet" type="text/css" href="js/datepicker/themes/default.date.min.css" />
+	<link rel="stylesheet" type="text/css" href="js/datepicker/themes/default.time.min.css" />
+	<!-- COLOR PICKER -->
+	<link rel="stylesheet" type="text/css" href="js/colorpicker/css/colorpicker.min.css" />
+	<!-- FONTS -->
+	<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<!-- HEADER -->
+	<header class="navbar clearfix" id="header">		
+		<div class="container">
+			<div style="padding-top:7px;">
+				<a href="index.html" class="btn btn-primary">
+								返回
+				</a>
+			</div>
+		</div>
+	</header>
+	<!--/HEADER -->	
+	<!-- PAGE -->
+	<section id="page">
+		<div id="main-content">
+			<div class="container">
+				<div class="row">
+					<div id="content" class="col-lg-12">
+						<!-- PAGE HEADER-->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="page-header">
+									<!-- /BREADCRUMBS -->
+									<div class="clearfix">
+										<h3 class="content-title pull-left">党支部活动情况</h3>
+									</div>
+									<!--<div class="description">Common UI Elements and Features</div>-->
+								</div>
+							</div>
+						</div>
+						
+						<!-- /PAGE HEADER -->
+						<!-- PAGE MAIN CONTENT -->
+						<!-- MODALS -->
+						<div class="row">
+							<div class="col-md-12">
+								<!-- BOX-->
+								<div class="box border red">
+									<div class="box-title">
+										<h4><i class="fa fa-bar-chart-o"></i>党建新闻发布总数</h4>
+										<!--<div class="tools">
+											<a href="#box-config" data-toggle="modal" class="config">
+												<i class="fa fa-cog"></i>
+											</a>
+											<a href="javascript:;" class="reload">
+												<i class="fa fa-refresh"></i>
+											</a>
+											<a href="javascript:;" class="collapse">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a href="javascript:;" class="remove">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>-->
+									</div>
+									<div class="box-body">
+										<div class="row">
+											<div class="col-md-12">
+									
+											<div id="newPublishNum" style="width: 100%; height:250px;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /BOX -->
+							</div>
+						</div>
+						<div class="separator"></div>
+						<div class="row">
+							<div class="col-md-12">
+								<!-- COLOR PICKER -->
+								<div class="box border orange">
+									<div class="box-title">
+										<h4><i class="fa fa-tags"></i>党建新闻发布总数排名</h4>
+										<!--<div class="tools">
+											<a href="#box-config" data-toggle="modal" class="config">
+												<i class="fa fa-cog"></i>
+											</a>
+											<a href="javascript:;" class="reload">
+												<i class="fa fa-refresh"></i>
+											</a>
+											<a href="javascript:;" class="collapse">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a href="javascript:;" class="remove">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
+									-->
+									</div>
+									<div class="box-body">
+										<div class="row">
+										<div class="col-md-12">
+											<table class="table table-striped">
+													   <thead>
+													      <tr>
+													      	 <th>名次</th>
+													         <th>支部名称</th>
+													         <th>所属党委</th>
+													         <th>发布新闻总次数</th>
+													         <th>查看详细</th>
+													      </tr>
+													   </thead>
+													   <tbody>
+													      <tr>
+													      	 <td>1</td>
+													         <td>机关第八党支部</td>
+													         <td>科技厅机关</td>
+													         <td>457</td>
+													         <td><a href="javascript:void(0);" class="viewDetail">查看详细</a></td>
+													      </tr>
+													      <tr>
+													         <td>2</td>
+													         <td>生物站党支部</td>
+													         <td>省自然资源科学研究院党委</td>
+													         <td>422</td>
+													         <td><a href="javascript:void(0);" class="viewDetail">查看详细</a></td>
+													      </tr>
+													      <tr>
+													         <td>3</td>
+													         <td>第五党支部</td>
+													         <td>省科学技术信息研究所党委</td>
+													         <td>401</td>
+													         <td><a href="javascript:void(0);" class="viewDetail">查看详细</a></td>
+													      </tr>
+													      <tr>
+													         <td>4</td>
+													         <td>第四党支部</td>
+													         <td>省原子能研究院党委</td>
+													         <td>385</td>
+													         <td><a href="javascript:void(0);" class="viewDetail">查看详细</a></td>
+													      </tr>
+													     <tr>
+													         <td>5</td>
+													         <td>第二党支部</td>
+													         <td>省计算机研究院党委</td>
+													         <td>375</td>
+													         <td><a href="javascript:void(0);" class="viewDetail">查看详细</a></td>
+													      </tr>
+													   </tbody>
+													</table>								
+										</div>
+										</div>
+									</div>
+								</div>
+								<!-- /COLOR PICKER -->
+							</div>
+							
+						</div>
+						<!-- /MODALS -->
+						<div class="separator"></div>
+						<!-- TOOLTIPS ETC -->
+						<div class="row">
+							<!-- TOOLTIPS -->
+							<div class="col-md-12">
+								<div class="box border green">
+									<div class="box-title">
+										<h4><i class="fa fa-comments"></i>支部组织生活情况</h4>
+										<!--<div class="tools">
+											<a href="#box-config" data-toggle="modal" class="config">
+												<i class="fa fa-cog"></i>
+											</a>
+											<a href="javascript:;" class="reload">
+												<i class="fa fa-refresh"></i>
+											</a>
+											<a href="javascript:;" class="collapse">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a href="javascript:;" class="remove">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
+									-->
+									</div>
+									<div class="box-body">
+										<div class="row">
+										<div class="col-md-12">
+											<div id="activities" style="height:500px;width: 100%;">
+												
+											</div>
+										</div>
+										</div>
+									</div>
+								</div>			
+							</div>
+							<!-- /TOOLTIPS -->
+						</div>
+
+
+						<!-- /PAGE MAIN CONTENT -->
+						<div class="footer-tools">
+							<span class="go-top">
+								<i class="fa fa-chevron-up"></i> Top
+							</span>
+						</div>
+					</div><!-- /CONTENT-->
+				</div>
+			</div>
+		</div>
+		<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog" style="width: 90%; height: 500px; margin: 20px auto;">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+                      模态框（Modal）标题
+            </h4>
+         </div>
+         <div class="modal-body" >
+           <div class="container">
+           	<div class="row">
+           		<div class="col-sm-12" style="height: 300px; width: 100%; margin: 0 auto;" id="layerMain">
+           			
+           		</div>
+           	</div>
+           </div>  
+         </div>
+      </div><!-- /.modal-content -->
+</div>
+</div>
+	</section>
+	<!--/PAGE -->
+	<!-- JAVASCRIPTS -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- JQUERY -->
+	<script src="js/jquery/jquery-2.0.3.min.js"></script>
+	<!-- JQUERY UI-->
+	<script src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<script src="bootstrap-dist/js/bootstrap.min.js"></script>
+	
+		
+	<!-- DATE RANGE PICKER -->
+	<script src="js/bootstrap-daterangepicker/moment.min.js"></script>
+	
+	<script src="js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+	<!-- SLIMSCROLL -->
+	<script type="text/javascript" src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+	<!-- BLOCK UI -->
+	<script type="text/javascript" src="js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+	<!-- BOOTSTRAP SWITCH -->
+	<script type="text/javascript" src="js/bootstrap-switch/bootstrap-switch.min.js"></script>
+	<!-- BOOTBOX -->
+	<script type="text/javascript" src="js/bootbox/bootbox.min.js"></script>
+	<!-- HUBSPOT MESSENGER -->
+	<script type="text/javascript" src="js/hubspot-messenger/js/messenger.min.js"></script>
+	<script type="text/javascript" src="js/hubspot-messenger/js/messenger-theme-flat.js"></script>
+	<script type="text/javascript" src="js/hubspot-messenger/js/messenger-theme-future.js"></script>
+	<!-- MAGIC SUGGEST -->
+	<script type="text/javascript" src="js/magic-suggest/magicsuggest-1.3.1-min.js"></script>
+	<!-- TIMEAGO -->
+	<script type="text/javascript" src="js/timeago/jquery.timeago.min.js"></script>
+	<!-- DATE PICKER -->
+	<script type="text/javascript" src="js/datepicker/picker.js"></script>
+	<script type="text/javascript" src="js/datepicker/picker.date.js"></script>
+	<script type="text/javascript" src="js/datepicker/picker.time.js"></script>
+	<!-- COLOR PICKER -->
+	<script type="text/javascript" src="js/colorpicker/js/bootstrap-colorpicker.min.js"></script>
+	<!-- RATY -->
+	<script type="text/javascript" src="js/jquery-raty/jquery.raty.min.js"></script>
+	<!-- COOKIE -->
+	<script type="text/javascript" src="js/jQuery-Cookie/jquery.cookie.min.js"></script>
+	<!-- CUSTOM SCRIPT -->
+	<script type="text/javascript" src="js/base/echarts.min.js"></script>
+    <script type="text/javascript" src="js/base/theme/macarons.js"></script>
+	<script type="text/javascript" src="js/base/newsPublish.js"></script>
+	<script type="text/javascript" src="js/base/activites.js"></script>
+	<!-- /JAVASCRIPTS -->
+	<script type="text/javascript" src="js/script.js"></script>
+	<!-- CUSTOM SCRIPT -->
+    <script>
+		jQuery(document).ready(function() {		
+			App.setPage("index");  //Set current page
+			App.init(); //Initialise plugins and elements
+		});
+	</script>
+</body>
+</html>

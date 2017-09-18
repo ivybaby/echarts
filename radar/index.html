@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECharts · Example</title>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js" ></script>
+ 
+     <script type="text/javascript">
+        // 路径配置
+        require.config({
+            paths: {
+              //  echarts: 'http://echarts.baidu.com/build/dist',
+                echarts: 'js'
+            }
+        });
+        //
+       
+         require(
+            [
+                'echarts',
+                'echarts/chart/radar'
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('sub')); 
+                
+            var option = {
+    title : {
+        text: '会员标签体系',
+        subtext: '',
+        x:'center',
+        textStyle:{
+             color: '#ff8c2d'
+             }
+        
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        orient : 'vertical',
+        x : 'right',
+        y : 'bottom',
+        data:['标签值'],
+        
+    },
+ 
+    polar : [
+       {
+           indicator : [
+               { text: '果粉', max: 6000},
+               { text: '时尚', max: 16000},
+               { text: '宅男', max: 30000},
+               { text: '变态', max: 38000},
+               { text: '处女座', max: 52000},
+               { text: '逗逼', max: 25000}
+            ]
+        }
+    ],
+    calculable : true,
+   
+    series : [
+        {
+            name: '',
+            type: 'radar',
+            data : [
+                {
+                    value : [4300, 10000, 28000, 35000, 50000, 19000],
+                    name : '标签值'
+                }
+            ],
+           
+        }
+    ]
+};
+                    
+                
+                
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+    </script>
+   
+    
+    
+    
+</head>
+
+<body>
+    <div id="sub" style="height:800px;"></div>
+      
+</body>
+</html>
